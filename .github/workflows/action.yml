@@ -18,12 +18,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          install-chromedriver: true
+      # - uses: browser-actions/setup-chrome@v1
+      #   with:
+      #     install-chromedriver: true
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt selenium --upgrade
 
       - name: Run Selenium Script
         run: python main.py

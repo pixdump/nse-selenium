@@ -2,7 +2,7 @@ name: Download CSV with Selenium
 
 on:
   schedule:
-    - cron: "30 9 * * 0-4"
+    - cron: "30 9 * * 1-5"
   workflow_dispatch:
 
 jobs:
